@@ -2,10 +2,10 @@
 
 # link
 
-- [MySQL 설치 위치]()
-- [SQL파일 MySQL 넣기]()
+- [MySQL 설치 위치](#mysql-설치-위치)
+- [SQL파일 MySQL 넣기](#sql파일-mysql-넣기)
 
-- [MySQL명령어 정리](#mysql명령어-정리)
+- MySQL명령어 정리
   - [How can a user implicitly end current MySQL transaction?](#how-can-a-user-implicitly-end-current-mysql-transaction)
   - [(외부링크)테이블 추가 , 변경](https://dreamcoding.tistory.com/71)
 - tutorial
