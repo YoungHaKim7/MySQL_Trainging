@@ -8,7 +8,7 @@
 - [외국인이 정리한거(mysql 명령어 굿)_how-to-start-logging-with-mysql/](https://betterstack.com/community/guides/logging/how-to-start-logging-with-mysql/)
 - https://offbyone.tistory.com/54
 
-```
+```sql
 $ mysql -h서버 -u아이디 -p비밀번호 데이터베이스명
 
 # 비번 1234
@@ -84,7 +84,7 @@ mysql> kill 프로세스아이디
 # How can a user implicitly end current MySQL transaction?[|🔝|](#link)
 - https://www.tutorialspoint.com/How-can-a-user-implicitly-end-current-MySQL-transaction
 
-```
+```sql
 mysql> START TRANSACTION;
 Query OK, 0 rows affected (0.00 sec)
 
@@ -109,7 +109,7 @@ mysql> select * from marks;
 ```
 
 - https://hermeslog.tistory.com/358
-```
+```sql
 mysql> SHOW DATABASES;
 
 mysql> show databases;
@@ -165,7 +165,7 @@ mysql> show CREATE table payment_events;
 
 # table 만들기
 
-```
+```sql
 CREATE TABLE payment_order_histories (  
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     FOREIGN KEY (payment_order_id) REFERENCES payment_orders(id)
@@ -174,14 +174,14 @@ CREATE TABLE payment_order_histories (
 
 # table 추가하기
 
-```
+```sql
 ALTER TABLE payment_orders 
     ADD COLUMN  [type] COMMENT '' AFTER `product_id`;
 ```
 
 # table 수정하기
 
-```
+```sql
 ALTER TABLE `payment_orders` 
 	CHANGE `amount` `amount` decimal(12,2) NOT NULL ;
 ```
