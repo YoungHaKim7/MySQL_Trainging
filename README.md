@@ -18,6 +18,7 @@ Antipiebse·2022년 4월 5일
 
 # MySQL명령어 정리[|🔝|](#link)
 
+- [외국인이 정리한거(mysql 명령어 굿)_how-to-start-logging-with-mysql/](https://betterstack.com/community/guides/logging/how-to-start-logging-with-mysql/)
 - https://offbyone.tistory.com/54
 
 ```
