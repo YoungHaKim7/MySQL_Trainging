@@ -3,10 +3,18 @@
 - [MySQL명령어 정리](#mysql명령어-정리)
   - [How can a user implicitly end current MySQL transaction?](#how-can-a-user-implicitly-end-current-mysql-transaction)
 
+- Table 추가, 삭제, 수정
+  - [table 만들기(create table)]()
+  - [table 추가하기(alter table)]()
+  - [table 수정하기(change)]
+  - [table전체적으로 보기(DESC table1("테이블명"))]()
+  - [table 삭제하기(drop)]()
+
 # MySQL명령어 정리[|🔝|](#link)
 
 - [외국인이 정리한거(mysql 명령어 굿)_how-to-start-logging-with-mysql/](https://betterstack.com/community/guides/logging/how-to-start-logging-with-mysql/)
 - https://offbyone.tistory.com/54
+
 
 ```sql
 $ mysql -h서버 -u아이디 -p비밀번호 데이터베이스명
@@ -163,7 +171,9 @@ mysql> show CREATE table payment_events;
 +----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ```
 
-# table 만들기
+<hr />
+
+# table 만들기(create table)[|🔝|](#link)
 
 ```sql
 CREATE TABLE payment_order_histories (  
@@ -172,16 +182,43 @@ CREATE TABLE payment_order_histories (
 ) COMMENT '';
 ```
 
-# table 추가하기
+# table 추가하기(alter table)[|🔝|](#link)
 
 ```sql
 ALTER TABLE payment_orders 
     ADD COLUMN  [type] COMMENT '' AFTER `product_id`;
 ```
 
-# table 수정하기
+# table 수정하기(columns명 바꾸기(change))[|🔝|](#link)
 
 ```sql
 ALTER TABLE `payment_orders` 
 	CHANGE `amount` `amount` decimal(12,2) NOT NULL ;
+```
+
+# table columns명 바꾸기(change 02)[|🔝|](#link)
+
+```sql
+ALTER TABLE `payment_orders` 
+	CHANGE `seller_idtest` `seller_id` bigint NOT NULL ;
+```
+
+# table전체적으로 보기(DESC table1("테이블명"))(#link)
+
+```
+mysql> DESC table1;
+```
+
+# table 삭제하기(drop)(#link)
+
+```sql
+# sql내용
+ALTER TABLE `payment_orders` 
+	DROP COLUMN `amount` `amount` decimal(12,2) NOT NULL ;
+
+# cli로 입력
+mysql> ALTER TABLE tables1 DROP COLUMN addtable;
+
+# table확인
+mysql> DESC tables1;
 ```
