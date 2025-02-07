@@ -210,6 +210,13 @@ ALTER TABLE `payment_orders`
 
 ```
 mysql> DESC table1;
++------+ -------+------+ ----+ -------+----------
+| Field| Type  | Null | Key | Default | Extra
++------+--------+------+ ----+ -------+----------
+| id   |   bigint| NO   | PRI | NULL   | auto_increment
+| buyid|   bigint| NO   |     | NULL   | 
++------+ -------+------+ ----+ -------+----------
+
 ```
 
 # table 삭제하기(drop)[|🔝|](#link)
