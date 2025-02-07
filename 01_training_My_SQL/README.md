@@ -3,12 +3,12 @@
 - [MySQL명령어 정리](#mysql명령어-정리)
   - [How can a user implicitly end current MySQL transaction?](#how-can-a-user-implicitly-end-current-mysql-transaction)
 
-- Table 추가, 삭제, 수정
-  - [table 만들기(create table)]()
-  - [table 추가하기(alter table)]()
-  - [table 수정하기(change)]
-  - [table전체적으로 보기(DESC table1("테이블명"))]()
-  - [table 삭제하기(drop)]()
+- Table 추가(add), 삭제(drop), 수정(change)
+  - [table 만들기(create table)](#table-만들기create-table)
+  - [table 추가하기(add)(alter table)](#table-추가하기alter-table)
+  - [table 수정하기(change)](#table-수정하기columns명-바꾸기change)
+  - [table전체적으로 보기(DESC table1("테이블명"))](#table전체적으로-보기desc-table1테이블명)
+  - [table 삭제하기(drop)](#table-삭제하기drop)
 
 # MySQL명령어 정리[|🔝|](#link)
 
@@ -172,6 +172,9 @@ mysql> show CREATE table payment_events;
 ```
 
 <hr />
+
+# 잘 정리됨
+- https://m.blog.naver.com/username1103/222200652652
 
 # table 만들기(create table)[|🔝|](#link)
 
