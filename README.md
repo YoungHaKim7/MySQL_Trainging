@@ -3,6 +3,7 @@
 # link
 
 - [MySQL명령어 정리](#mysql명령어-정리)
+  - [How can a user implicitly end current MySQL transaction?]()
 - tutorial
   - [SQL 기초 강의 | 혼자 공부하는 SQL(MySQL 8.0) | 한빛미디어](#sql-기초-강의-혼자-공부하는-sqlmysql-80--한빛미디어)
   - [WSL2에 mysql설치하기](#wsl2에-mysql설치하기)
@@ -92,6 +93,31 @@ mysql> kill 프로세스아이디
  
 # mysqld --skip-grant
 
+```
 
+# How can a user implicitly end current MySQL transaction?[|🔝|](#link)
+- https://www.tutorialspoint.com/How-can-a-user-implicitly-end-current-MySQL-transaction
 
+```
+mysql> START TRANSACTION;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> INSERT INTO MARKS Values(3,'gaurav','Comp',69);
+Query OK, 1 row affected (0.26 sec)
+
+mysql> Create table student(id int, Name Varchar(10),);
+Query OK, 0 rows affected (0.84 sec)
+
+mysql> Rollback;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> select * from marks;
++------+---------+-----------+-------+
+| Id | Name | Subject | Marks |
++------+---------+-----------+-------+
+| 1 | Aarav | Maths | 50 |
+| 1 | Harshit | Maths | 55 |
+| 3 | Gaurav | Comp | 69 |
++------+---------+-----------+-------+
+3 rows in set (0.00 sec)
 ```
