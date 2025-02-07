@@ -22,3 +22,17 @@ Antipiebse·2022년 4월 5일
 # SQL 기초 강의] 혼자 공부하는 SQL(MySQL 8.0) | 한빛미디어[|🔝|](#link)
 - https://youtube.com/playlist?list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl8Pm&si=pUK-bbPWSwPSTrFp
 
+# MySQL 설치 위치
+
+- 출처: https://larva.tistory.com/entry/mysql-설치-경로-확인 [devNote:티스토리]
+
+```bash
+# mysql 설치경로 확인
+$ ps aux | grep mysql
+
+# whereis mysql기본 설치 경로는
+/var/lib/mysql/저장된 database 경로 확인 방법
+
+mysql> show variables like 'datadir';
+
+```
