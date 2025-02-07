@@ -203,13 +203,13 @@ ALTER TABLE `payment_orders`
 	CHANGE `seller_idtest` `seller_id` bigint NOT NULL ;
 ```
 
-# table전체적으로 보기(DESC table1("테이블명"))(#link)
+# table전체적으로 보기(DESC table1("테이블명"))[|🔝|](#link)
 
 ```
 mysql> DESC table1;
 ```
 
-# table 삭제하기(drop)(#link)
+# table 삭제하기(drop)[|🔝|](#link)
 
 ```sql
 # sql내용
