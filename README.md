@@ -27,6 +27,8 @@ Antipiebse·2022년 4월 5일
 
 # SQL 기초 강의] 혼자 공부하는 SQL(MySQL 8.0) | 한빛미디어[|🔝|](#link)
 - https://youtube.com/playlist?list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl8Pm&si=pUK-bbPWSwPSTrFp
+  - (231025)MySQL Course for Beginners | freeCodeCamp.org
+    - https://youtu.be/uWkcxasFWzQ?si=L8EYE5wZ_Fjku5_f
 
 # MySQL 설치 위치[|🔝|](#link)
 
