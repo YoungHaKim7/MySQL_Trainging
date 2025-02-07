@@ -5,8 +5,8 @@
 - [MySQL 설치 위치](#mysql-설치-위치)
 - [SQL파일 MySQL 넣기](#sql파일-mysql-넣기)
 - docker
-  - [첨에 설치하고 들어가기 & docker에서 들어가기 sql(docker안에서 실행&설치 및 docker exec)]()
-  - [MySQL _ Docker안에서 들어가는 방법]()
+  - [첨에 설치하고 들어가기 & docker에서 들어가기 sql(docker안에서 실행&설치 및 docker exec)](#sqldocker안에서-실행설치-및-docker-exec)
+  - [MySQL _ Docker안에서 들어가는 방법](#sql-첨에-root비번-설정까지첨에-들어가는거랑-난중에-들어가는거-비슷하다)
 
 - MySQL명령어 정리
   - [How can a user implicitly end current MySQL transaction?](#how-can-a-user-implicitly-end-current-mysql-transaction)
