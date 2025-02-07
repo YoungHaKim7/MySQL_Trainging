@@ -1,3 +1,8 @@
+# link
+
+- [MySQL명령어 정리](#mysql명령어-정리)
+  - [How can a user implicitly end current MySQL transaction?](#how-can-a-user-implicitly-end-current-mysql-transaction)
+
 # MySQL명령어 정리[|🔝|](#link)
 
 - [외국인이 정리한거(mysql 명령어 굿)_how-to-start-logging-with-mysql/](https://betterstack.com/community/guides/logging/how-to-start-logging-with-mysql/)
