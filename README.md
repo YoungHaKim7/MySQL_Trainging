@@ -178,3 +178,26 @@ mysql> show CREATE table payment_events;
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |
 +----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ```
+
+# table 만들기
+
+```
+CREATE TABLE payment_order_histories (  
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    FOREIGN KEY (payment_order_id) REFERENCES payment_orders(id)
+) COMMENT '';
+```
+
+# table 추가하기
+
+```
+ALTER TABLE payment_orders 
+    ADD COLUMN  [type] COMMENT '' AFTER `product_id`;
+```
+
+# table 수정하기
+
+```
+ALTER TABLE `payment_orders` 
+	CHANGE `amount` `amount` decimal(12,2) NOT NULL ;
+```
