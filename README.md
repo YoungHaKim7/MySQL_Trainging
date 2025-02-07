@@ -7,6 +7,7 @@
 - tutorial
   - [SQL 기초 강의 | 혼자 공부하는 SQL(MySQL 8.0) | 한빛미디어](#sql-기초-강의-혼자-공부하는-sqlmysql-80--한빛미디어)
   - [WSL2에 mysql설치하기](#wsl2에-mysql설치하기)
+  - [docker run mysql](https://poiemaweb.com/docker-mysql)
 
 <hr />
 
