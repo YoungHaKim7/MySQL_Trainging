@@ -10,6 +10,9 @@
   - [WSL2에 mysql설치하기](#wsl2에-mysql설치하기)
   - [docker run mysql](https://poiemaweb.com/docker-mysql)
 
+- VSCode Extentions
+  - [MySQL_Database Management for MySQL/MariaDB, PostgreSQL, Redis and ElasticSearch.](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2)
+
 <hr />
 
 # WSL2에 mysql설치하기[|🔝|](#link)
