@@ -70,24 +70,36 @@ Enter password:
 
 $ docker pull mysql
 
+# 도커 내가 원하는 버젼으로 설치
 $ docker pull mysql:8.0.22
 
+# 도커 이미지 보기
 $ docker images
 
+# 도커 첨에 실행 패턴
 $ docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=<password> -d -p 3306:3306 mysql:latest
 
+
+# 도커 실행하기 "mysql-container"
 $ docker exec -it mysql-container bash
 
+
+# 도커 list 숨긴것까지 다 보기 
 $ docker ps -a
 
+# 도커 중지
 $ docker stop mysql-container
 
+# 도커 시작 dc3d이렇게 쳐도 됨 name으로 해도 되고
 $ docker start mysql-container
 
+# 도커 재시작
 $ docker restart mysql-container
 
-$ mysql -uy root -p
+# 쉘에서 MySQL 들어가기
+$ mysql -u root -p
 
+# MySQL안에서 데이터 베이스 보기
 mysql> show databases;
 
 
