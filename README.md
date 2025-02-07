@@ -123,3 +123,58 @@ mysql> select * from marks;
 +------+---------+-----------+-------+
 3 rows in set (0.00 sec)
 ```
+
+- https://hermeslog.tistory.com/358
+```
+mysql> SHOW DATABASES;
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| testDB             |
++--------------------+
+
+mysql> use testDB;
+
+mysql> show tables;
++-------------------------+
+| Tables_in_testDB        |
++-------------------------+
+| payment_events          |
+| payment_order_histories |
+| payment_orders          |
++-------------------------+
+3 rows in set (0.00 sec)
+
+# COLUMN 정보조회 (with comment)
+
+mysql> show columns from 테이블명;
+
+
+mysql> show CREATE table payment_events;
+
+----------------------------------------------+
+| payment_events | CREATE TABLE `payment_events` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `buyer_id` bigint NOT NULL,
+  `is_payment_done` tinyint(1) NOT NULL DEFAULT '0',
+  `payment_key` varchar(255) DEFAULT NULL,
+  `order_id` varchar(255) DEFAULT NULL,
+  `type` enum('NORMAL') NOT NULL,
+  `order_name` varchar(255) NOT NULL,
+  `method` enum('EASY_PAY') DEFAULT NULL,
+  `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `approved_at` datetime DEFAULT NULL,
+  `psp_raw_data` json DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `payment_key` (`payment_key`),
+  UNIQUE KEY `order_id` (`order_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |
++----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
