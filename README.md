@@ -4,6 +4,9 @@
 
 - [MySQL 설치 위치](#mysql-설치-위치)
 - [SQL파일 MySQL 넣기](#sql파일-mysql-넣기)
+- docker
+  - [첨에 설치하고 들어가기 & docker에서 들어가기 sql(docker안에서 실행&설치 및 docker exec)]()
+  - [MySQL _ Docker안에서 들어가는 방법]()
 
 - MySQL명령어 정리
   - [How can a user implicitly end current MySQL transaction?](#how-can-a-user-implicitly-end-current-mysql-transaction)
@@ -43,7 +46,52 @@ mysql> show variables like 'datadir';
 # SQL파일 MySQL 넣기[|🔝|](#link)
 
 - https://stackoverflow.com/questions/17666249/how-to-import-an-sql-file-using-the-command-line-in-mysql
+- https://dev.mysql.com/doc/refman/8.4/en/mysql-batch-commands.html
 
 ```bash
 mysql -u username -p database_name < file.sql
+```
+
+# SQL 첨에 root비번 설정까지(첨에 들어가는거랑 난중에 들어가는거 비슷하다)[|🔝|](#link)
+
+```
+# shell에서 접속하기 누른다음에 비번 누르면 된다.
+mysql -uroot -p
+Enter password:
+
+```
+
+# sql(docker안에서 실행&설치 및 docker exec)[|🔝|](#link)
+
+- https://blog.naver.com/pjok1122/221539169731
+- https://poiemaweb.com/docker-mysql
+
+```
+
+$ docker pull mysql
+
+$ docker pull mysql:8.0.22
+
+$ docker images
+
+$ docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=<password> -d -p 3306:3306 mysql:latest
+
+$ docker exec -it mysql-container bash
+
+$ docker ps -a
+
+$ docker stop mysql-container
+
+$ docker start mysql-container
+
+$ docker restart mysql-container
+
+$ mysql -uy root -p
+
+mysql> show databases;
+
+
+# shell에서 접속하기 누른다음에 비번 누르면 된다.
+mysql -uroot -p
+Enter password:
 ```
